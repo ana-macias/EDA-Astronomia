@@ -2,7 +2,10 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-data = pd.read_csv('nasa.csv', skiprows=96) # CSV Original que limpio
+import os
+
+data =pd.read_csv(r'C:\\Users\\amaci\\Documents\\EDA_Astronomia\\EDA-Astronomia\\Datasets\\nasa.csv', skiprows=96)
+# Columnas a consevar del CSV Original
 
 columnas_a_conservar = [
     'pl_name',        # nombre del planeta
