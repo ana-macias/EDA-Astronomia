@@ -15,6 +15,7 @@
 "Las estrellas de tipo espectral G (como el Sol) y K (enanas naranjas) son más propensas a tener planetas con condiciones aptas para la vida debido a su estabilidad y longevidad."  
 
 🌎 **Hipótesis 4:**   
+
 "Los exoplanetas con órbitas casi circulares tienen mayores probabilidades de tener climas estables, lo cual favorece el desarrollo de vida."  
 
 🪐 **Hipótesis 5:**   
@@ -22,3 +23,5 @@
 
 🌫 **Hipótesis 6:**   
 "Los exoplanetas con atmósferas densas y estables podrían conservar agua líquida, lo cual favorece la posibilidad de vida."  
+
+## ESTRUCTURA DEL PROYECTO
