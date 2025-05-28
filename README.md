@@ -25,3 +25,20 @@
 "Los exoplanetas con atmósferas densas y estables podrían conservar agua líquida, lo cual favorece la posibilidad de vida."  
 
 ## ESTRUCTURA DEL PROYECTO
+```plaintext
+📁 Estructura del proyecto
+├── Datasets/
+│   ├── 5250.csv
+│   └── candidatos_tipo_tierra.csv
+│   └── hipotesis_1.csv
+│   └── hipotesis_2.csv
+│   └── hipotesis_3.csv
+│   └── nasa.csv
+├── Imagenes/
+│   ├── grafico.png
+├── Notebooks/
+│   ├── EDA.ipynb
+│   └── Memoria_EDA.ipynb
+└── Scripts/
+    ├── Main.py
+    └── Main_1.py
