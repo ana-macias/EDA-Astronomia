@@ -64,10 +64,8 @@ Identificar si alguno tiene datos atmosféricos disponibles.
 ├── Imagenes/
 │   ├── graficos.png
 ├── Notebooks/
-│   ├── EDA.ipynb
 │   └── Memoria_EDA.ipynb
 └── Scripts/
     ├── Main.py
-    └── Main_1.py
 
 
