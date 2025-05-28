@@ -59,6 +59,12 @@ plt.figure(figsize=(10, 6))
 sns.scatterplot(data=candidatos_vida_seleccion, x='pl_eqt', y='pl_insol')
 for _, row in candidatos_vida_seleccion.iterrows():
     plt.text(row['pl_eqt']+2, row['pl_insol'], row['pl_name'], fontsize=8)
+
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'ScatterplotNombres19.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/ScatterplotNombres19.jpg')
 #_____________________________________________________________________________________________
 # Filtrar planetas con temperatura de equilibrio conocida
@@ -77,6 +83,11 @@ df_temp = df[df['pl_eqt'].notna()]
 #plt.xlim(0, 1000)  # Ajusta si hay valores extremos
 #plt.legend()
 #plt.grid(True)
+# Creamos la ruta de cada gráfico
+#ruta = '../img/intro'
+#os.makedirs(ruta, exist_ok=True)
+#nombre_archivo = 'KdeTemperaturas.jpg'
+#plt.savefig(os.path.join(ruta,nombre_archivo))
 #plt.savefig('../Imagenes/KdeTemperaturas.jpg')
 
 # HIPOTESIS 2 #
@@ -128,6 +139,11 @@ plt.xlabel('Rango de masa (masas terrestres)')
 plt.ylabel('Cantidad de planetas')
 plt.legend(title='En zona habitable', labels=['No', 'Sí'])
 plt.xticks(rotation=0)
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'Barras.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/Barras.jpg')
 
 #_____________________________________________________________________________________________
@@ -151,6 +167,11 @@ plt.ylim(0, 20)
 plt.legend(title='En zona habitable')
 plt.grid(True)
 plt.tight_layout()
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'Scatterplot.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/Scatterplot.jpg')
 
 #___________________________________________________________________________________________________
@@ -160,7 +181,11 @@ sns.scatterplot(data=candidatos_vida_seleccion, x='pl_eqt', y='pl_bmasse')
 for _, row in candidatos_vida_seleccion.iterrows():
     plt.text(row['pl_eqt']+2, row['pl_bmasse'], row['pl_name'], fontsize=8)
    
-plt.show()
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'ScatterplotNombres13.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/ScatterplotNombres13.jpg')
 
 #_____________________________________________________________________________________________
@@ -197,6 +222,11 @@ plt.xlabel("Tipo espectral")
 plt.ylabel("Número de planetas habitables")
 plt.grid(True, axis='y')
 plt.tight_layout()
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'BarrasPlanetas.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/BarrasPlanetas.jpg')
 
 
@@ -214,6 +244,11 @@ sns.scatterplot(data=habitables, x='pl_eqt', y='pl_bmasse')
 for _, row in habitables.iterrows():
     plt.text(row['pl_eqt']+2, row['pl_bmasse'], row['pl_name'], fontsize=8)
 
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'ScatterplotNombres.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/ScatterplotNombres.jpg')
 
 #_________________________________________________________________________________________________
@@ -248,6 +283,11 @@ sns.countplot(data=df_filtrado, x='orbital_type')
 plt.title("Distribución de Tipos de Órbitas")
 plt.xlabel("Tipo de Órbita")
 plt.ylabel("Número de Exoplanetas")
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'BarrasOrbita.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/BarrasOrbita.jpg')
 
 #_____________________________________________________________________________________________
@@ -259,6 +299,11 @@ plt.title("Exoplanetas en Zona Habitable por Tipo de Órbita")
 plt.xlabel("Tipo de Órbita")
 plt.ylabel("Número de Exoplanetas")
 plt.legend(title="¿En zona habitable?")
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'BarrasOrbitaHabitable.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/BarrasOrbitaHabitable.jpg')
 
 #______________________________________________________________________________________________
@@ -300,6 +345,11 @@ ax1.set_ylim(0, 1)
 ax1.set_title('Proporción de Sistemas con Planetas Habitables vs. Número de Planetas')
 
 plt.tight_layout()
+# Creamos la ruta de cada gráfico
+ruta = '../img/intro'
+os.makedirs(ruta, exist_ok=True)
+nombre_archivo = 'BarrasNumeroPlanetas.jpg'
+plt.savefig(os.path.join(ruta,nombre_archivo))
 plt.savefig('../Imagenes/BarrasNumeroPlanetas.jpg')
 
 # FINAL 
