@@ -4,7 +4,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-data =pd.read_csv(r'C:\\Users\\amaci\\Documents\\EDA_Astronomia\\EDA-Astronomia\\Datasets\\nasa.csv', skiprows=96)
+# data =pd.read_csv(r'C:\\Users\\amaci\\Documents\\EDA_Astronomia\\EDA-Astronomia\\Datasets\\nasa.csv', skiprows=96)
+data =pd.read_csv('../Datasets/nasa.csv', skiprows=96)
 # Columnas a consevar del CSV Original
 
 columnas_a_conservar = [
@@ -33,7 +34,7 @@ numeric_df = df_hipotesis.select_dtypes(include='number')
 correlation_matrix = numeric_df.corr()
 
 # Generar el heatmap con escala entre -1 y 1
-plt.figure(figsize=(6, 4))
+plt.figure(figsize=(8, 10))
 sns.heatmap(
     correlation_matrix, 
     annot=True, 
@@ -44,5 +45,4 @@ sns.heatmap(
     vmax=1
 )
 plt.title("Mapa de Calor de Correlaciones (Escala -1 a 1)")
-plt.savefig()
-plt.show()
+plt.savefig('../Imagenes/Heatmap.jpg')

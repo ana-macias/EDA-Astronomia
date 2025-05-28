@@ -1,7 +1,7 @@
 
 # **EDA Exoplanetas y Vida extraterreste**
 
-![Exoplanetas.jpg](attachment:Exoplanetas.jpg)
+![Exoplanetas](Imagenes/Exoplanetas.jpg)
 
 ## ¿ Es posible demostrar con los datos de los que se dispone sobre exoplanetas confirmados las siguientes hipótesis?
 
@@ -21,4 +21,20 @@
 "Los sistemas planetarios con múltiples planetas aumentan las probabilidades de que al menos uno de ellos se ubique en la zona habitable."  
 
 🌫 **Hipótesis 6:**   
-"Los exoplanetas con atmósferas densas y estables podrían conservar agua líquida, lo cual favorece la posibilidad de vida."  
+"Los exoplanetas con atmósferas densas y estables podrían conservar agua líquida, lo cual favorece la posibilidad de vida."
+
+## ESTRUCTURA DEL PROYECTO
+```plaintext
+📁 Estructura del proyecto
+├── Datasets/
+│   ├── datos1.csv
+│   └── datos2.csv
+├── Imagenes/
+│   ├── grafico1.png
+│   └── diagrama.jpg
+├── Notebooks/
+│   ├── analisis_exoplanetas.ipynb
+│   └── visualizacion.ipynb
+└── Scripts/
+    ├── limpieza.py
+    └── utils.py
