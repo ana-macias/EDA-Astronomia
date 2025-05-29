@@ -74,8 +74,8 @@ df_temp = df[df['pl_eqt'].notna()]
 # Grafico KDE  respecto a la T de equilibrio
 
 #plt.figure(figsize=(10, 6))
-#sns.kdeplot(data=df_temp[df_temp['en_zona_habitable'] == True], x='pl_eqt', label='En zona habitable', fill=True)
-#sns.kdeplot(data=df_temp[df_temp['en_zona_habitable'] == False], x='pl_eqt', label='Fuera de zona habitable', fill=True)
+#sns.kdeplot(data=df_temp[df_temp['en_habitable'] == True], x='pl_eqt', label='En zona habitable', fill=True)
+#sns.kdeplot(data=df_temp[df_temp['en_habitable'] == False], x='pl_eqt', label='Fuera de zona habitable', fill=True)
 
 #plt.title('Distribución KDE de temperatura de equilibrio (pl_eqt)')
 #plt.xlabel('Temperatura de equilibrio (K)')
